@@ -9,12 +9,10 @@ precmd() { print "" }
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 {% endif %}
-
 {% if yadm.os == "Linux" && yadm.distro == "Arch" %}
 # zplug in Arch linux via Aur
 source /usr/share/zsh/scripts/zplug/init.zsh
 {% endif %}
-
 {% if yadm.os == "Linux" && yadm.distro != "Arch" %}
 # zplug installed from source
 export ZPLUG_HOME=$HOME/.zplug
