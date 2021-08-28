@@ -55,6 +55,8 @@ alias li="ls -l"
 NEOFETCH=neofetch
 alias neofetch="${NEOFETCH} --block_range 0 15"
 alias weather="ansiweather"
+alias j2cli="jinja2"
+alias j2="jinja2"
 
 gitall() {
     git add .
