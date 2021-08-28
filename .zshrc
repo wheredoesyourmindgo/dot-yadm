@@ -4,9 +4,18 @@
 precmd() { print "" }
 
 # zplug init
+{% if YADM_OS == "Darwin" %}
 # use Homebrew version of zplug w/ MacOS
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
+{% elif YADM_DISTRO == "Arch" %}
+# zplug in Arch linux via Aur
+source /usr/share/zsh/scripts/zplug/init.zsh
+{% else %}
+# zplug installed from source
+export ZPLUG_HOME=$HOME/.zplug
+source $ZPLUG_HOME/init.zsh
+{% endif %}
 
 # Make sure to use double quotes
 #zplug "g-plane/zsh-yarn-autocompletions", hook-build:"./zplug.zsh", defer:2
