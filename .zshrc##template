@@ -147,9 +147,20 @@ fortune | cowsay -f small | lolcat
 
 export NVM_DIR="$HOME/.nvm"
 # nvm init
+{% if yadm.os == "Darwin" %}
 # use homebrew version of nvm w/ macos
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+{% endif %}
+{% if yadm.os == "Linux" && yadm.distro == "Arch" %}
+# nvm in arch linux via aur
+[ -s "/usr/share/nvm/init-nvm.sh" ] && source "/usr/share/nvm/init-nvm.sh"  # This loads nvm convenience script
+{% endif %}
+{% if yadm.os == "Linux" && yadm.distro != "Arch" %}
+# nvm installed from source
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+{% endif %}
 
 # Auto switch using .nvmrc
 autoload -Uz add-zsh-hook
