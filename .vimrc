@@ -22,6 +22,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/vim-byoa', { 'branch': 'main' }
 "Plug 'rhysd/clever-f.vim'
+"Plug 'relastle/bluewery.vim'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
@@ -120,6 +121,9 @@ let &t_ZR="\e[23m"
   ""\ }
 
 " Solarized8
+if (has("termguicolors"))
+  set termguicolors
+endif
 let g:solarized_termtrans=1
 let g:solarized_use16=1
 let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
@@ -130,6 +134,10 @@ let g:airline_theme='solarized'
 "let g:lightline = {
  ""\ 'colorscheme': 'solarized'
  ""\ }
+
+"colorscheme bluewery
+"set termguicolors
+"let g:lightline = { 'colorscheme': 'bluewery' }
 
 "" Gruvbox Material Fork
 "" Enable true color 启用终端24位色
