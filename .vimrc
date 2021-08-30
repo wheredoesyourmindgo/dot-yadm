@@ -138,16 +138,16 @@ let &t_ZR="\e[23m"
  ""\ }
 
 " Lucius
-colorscheme lucius
 "let g:lucius_style='dark'  " (default: 'dark') 
 " Set this option to either 'light' or 'dark' for your desired color scheme. It has the same effect as setting the background. 
 let g:lucius_contrast='normal'  " (default: 'normal') 
 " This option determines the contrast to use for text/ui elements. It can be set to 'low', 'normal', or 'high'. At this time there is no 'high' for the light scheme. 
-let g:lucius_contrast_bg='normal'  " (default: 'normal') 
+let g:lucius_contrast_bg='normal' " (default: 'normal') 
 "Setting this option makes the background a higher contrast. Current settings are 'normal' and 'high'. 
 let g:lucius_use_bold=1 " (default: 1) 
 " Setting this will cause the color scheme to use bold fonts for some items. 
 let g:lucius_use_underline=1 " (default: 1) 
+colorscheme lucius
 let g:airline_theme='lucius'
 
 "colorscheme bluewery
