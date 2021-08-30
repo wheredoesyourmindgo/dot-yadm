@@ -20,6 +20,10 @@ if [ "$system_type" = "Darwin" ]; then
   echo "Cleaning homebrew cache"
   brew cleanup -s
 
+  # Copy fonts to ~/Library/Fonts
+  echo "Copying fonts to user folder"
+  cp -f ~/.fonts/* ~/Library/Fonts/
+
 fi
 
 # install Vim plugins
