@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'wheredoesyourmindgo/vim-byoa', { 'branch': 'main' }
 "Plug 'rhysd/clever-f.vim'
 "Plug 'relastle/bluewery.vim'
+Plug 'jonathanfilip/vim-lucius'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
@@ -78,6 +79,10 @@ set backspace=indent,eol,start
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 let g:airline_powerline_fonts = 1 " with ligatures
 "let g:airline_powerline_fonts = 0 " without ligatures
 
@@ -121,19 +126,29 @@ let &t_ZR="\e[23m"
   ""\ }
 
 " Solarized8
-if (has("termguicolors"))
-  set termguicolors
-endif
-let g:solarized_termtrans=1
-let g:solarized_use16=1
-let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
-"set background=light
-"set background=dark
-colorscheme solarized8
-let g:airline_theme='solarized'
-"let g:lightline = {
+"let g:solarized_termtrans=1
+"let g:solarized_use16=1
+"let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
+""set background=light
+""set background=dark
+"colorscheme solarized8
+"let g:airline_theme='solarized'
+""let g:lightline = {
  ""\ 'colorscheme': 'solarized'
  ""\ }
+
+" Lucius
+colorscheme lucius
+"let g:lucius_style='dark'  " (default: 'dark') 
+" Set this option to either 'light' or 'dark' for your desired color scheme. It has the same effect as setting the background. 
+let g:lucius_contrast='normal'  " (default: 'normal') 
+" This option determines the contrast to use for text/ui elements. It can be set to 'low', 'normal', or 'high'. At this time there is no 'high' for the light scheme. 
+let g:lucius_contrast_bg='normal'  " (default: 'normal') 
+"Setting this option makes the background a higher contrast. Current settings are 'normal' and 'high'. 
+let g:lucius_use_bold=1 " (default: 1) 
+" Setting this will cause the color scheme to use bold fonts for some items. 
+let g:lucius_use_underline=1 " (default: 1) 
+let g:airline_theme='lucius'
 
 "colorscheme bluewery
 "set termguicolors
