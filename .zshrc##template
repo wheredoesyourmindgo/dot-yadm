@@ -58,6 +58,22 @@ NEOFETCH=neofetch
 alias neofetch="${NEOFETCH} --block_range 0 15"
 alias weather="ansiweather"
 
+# yarn/npm
+alias yui="yarn upgrade-interactive"
+alias yuil="yarn upgrade-interactive --latest"
+alias ngu="npm-check -gu"
+alias ygui="yarn global upgrade-interactive"
+alias yguil="yarn global upgrade-interactive --latest"
+alias ncu="npm-check -u"
+alias no="npm outdated"
+alias ns="npm start"
+alias ys="yarn start"
+alias yd="yarn dev"
+alias ni="npm install"
+alias yi="yarn install"
+alias ngls="npm ls -g --depth 0"
+alias ygls="yarn global list"
+
 gitall() {
     git add .
     if [ "$1" != "" ] # or better, if [ -n "$1" ]
@@ -121,22 +137,6 @@ function vim {
     env vim --cmd "let theme = 'light'" $@
   fi
 }
-
-# yarn/npm
-alias yarno="yarn outdated"
-alias yarnu="yarn upgrade-interactive"
-alias npmgu="npm-check -gu"
-alias yarngu="yarn global upgrade-interactive"
-alias npmu="npm-check -u"
-alias npmo="npm outdated"
-alias npms="npm start"
-alias yarns="yarn start"
-alias npmi="npm install"
-alias yarni="yarn install"
-alias npmgls="npm ls -g --depth 0"
-alias yarngls="yarn global list"
-alias n="npm"
-alias y="yarn"
 
 # Banner
 #neofetch --color_blocks off | lolcat
