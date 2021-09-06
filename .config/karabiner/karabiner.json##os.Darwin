@@ -16,10 +16,28 @@
         },
         "rules": [
           {
-            "description": "Paste",
+            "description": "Paste [D-qmk]",
             "manipulators": [
               {
-                "conditions": [],
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_unless"
+                  }
+                ],
                 "from": {
                   "key_code": "d",
                   "modifiers": {
@@ -37,12 +55,108 @@
             ]
           },
           {
-            "description": "Redo",
+            "description": "Redo [D-qmk]",
             "manipulators": [
               {
-                "conditions": [],
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_unless"
+                  }
+                ],
                 "from": {
                   "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "z",
+                    "modifiers": ["shift", "command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Paste [D-non qmk]",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "v",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Redo [D-non qmk]",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "b",
                   "modifiers": {
                     "mandatory": ["command"]
                   }
@@ -3442,84 +3556,6 @@
                   {
                     "key_code": "right_arrow",
                     "modifiers": ["shift"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Paste",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "v",
-                  "modifiers": {
-                    "mandatory": ["command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "v",
-                    "modifiers": ["command"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Redo",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "b",
-                  "modifiers": {
-                    "mandatory": ["command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "z",
-                    "modifiers": ["shift", "command"]
                   }
                 ],
                 "type": "basic"
