@@ -330,6 +330,37 @@
             ]
           },
           {
+            "description": "BNR1 Dark Mode Toggle",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "mandatory": ["shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "d",
+                    "modifiers": ["command", "control", "shift", "option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "BNR1 Zoom Out",
             "manipulators": [
               {
