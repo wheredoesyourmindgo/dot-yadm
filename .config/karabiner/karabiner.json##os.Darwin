@@ -285,7 +285,7 @@
                   }
                 ],
                 "from": {
-                  "key_code": "f19",
+                  "key_code": "f21",
                   "modifiers": {
                     "mandatory": ["shift"]
                   }
@@ -315,7 +315,7 @@
                   }
                 ],
                 "from": {
-                  "key_code": "f21",
+                  "key_code": "f19",
                   "modifiers": {
                     "mandatory": ["shift"]
                   }
