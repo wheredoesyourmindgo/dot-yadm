@@ -5638,7 +5638,7 @@
           },
           "to": [
             {
-              "consumer_key_code": "mission_control"
+              "key_code": "mission_control"
             }
           ]
         },
@@ -5648,7 +5648,7 @@
           },
           "to": [
             {
-              "consumer_key_code": "launchpad"
+              "key_code": "launchpad"
             }
           ]
         },
@@ -5658,7 +5658,7 @@
           },
           "to": [
             {
-              "consumer_key_code": "illumination_decrement"
+              "key_code": "illumination_decrement"
             }
           ]
         },
@@ -5668,7 +5668,7 @@
           },
           "to": [
             {
-              "consumer_key_code": "illumination_increment"
+              "key_code": "illumination_increment"
             }
           ]
         },
