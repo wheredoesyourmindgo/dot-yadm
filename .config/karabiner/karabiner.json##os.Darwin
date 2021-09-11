@@ -16,82 +16,6 @@
         },
         "rules": [
           {
-            "description": "Change F2 to brightness decrease [D-qmk]",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_unless"
-                  }
-                ],
-                "from": {
-                  "key_code": "f2",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f18"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change F3 to brightness increase [D-qmk]",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_unless"
-                  }
-                ],
-                "from": {
-                  "key_code": "f3",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f19"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Dark mode toggle [D-qmk]",
             "manipulators": [
               {
@@ -5999,7 +5923,7 @@
           },
           "to": [
             {
-              "key_code": "f18"
+              "key_code": "f2"
             }
           ]
         },
@@ -6009,7 +5933,7 @@
           },
           "to": [
             {
-              "key_code": "f19"
+              "key_code": "f3"
             }
           ]
         },
