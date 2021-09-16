@@ -95,7 +95,7 @@
   {
     "key": "Enter",
     "command": "workbench.action.showCommands",
-    "when": "vim.mode != 'Insert' && !inputFocus || !vim.active"
+    "when": "!workbench.explorer.openEditorsView.active && vim.mode != 'Insert' && !inputFocus || !vim.active"
   },
   {
     "key": "ctrl+`",
