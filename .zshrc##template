@@ -129,6 +129,8 @@ alias screenfetch="screenfetch -E"
 
 alias vi="vim"
 alias macvim='mvim'
+
+{% if yadm.os == "Darwin" %}
 function vim {
   DARK_MODE=$(dark-mode status)
 
@@ -138,6 +140,7 @@ function vim {
     env vim --cmd "let theme = 'light'" $@
   fi
 }
+{% endif %}
 
 # Banner
 #neofetch --color_blocks off | lolcat
