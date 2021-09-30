@@ -219,7 +219,7 @@
                   "key_code": "f21",
                   "modifiers": {
                     "mandatory": [
-                      "shift"
+                      "command"
                     ]
                   }
                 },
@@ -251,7 +251,7 @@
                   "key_code": "f19",
                   "modifiers": {
                     "mandatory": [
-                      "shift"
+                      "command"
                     ]
                   }
                 },
@@ -283,7 +283,7 @@
                   "key_code": "f20",
                   "modifiers": {
                     "mandatory": [
-                      "shift"
+                      "command"
                     ]
                   }
                 },
@@ -697,70 +697,6 @@
                 "to": [
                   {
                     "consumer_key_code": "play_or_pause"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BN003 Screen Brighter",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17030,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f22",
-                  "modifiers": {
-                    "mandatory": [
-                      "shift"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f18"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BN003 Screen Dimmer",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17030,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f24",
-                  "modifiers": {
-                    "mandatory": [
-                      "shift"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f17"
                   }
                 ],
                 "type": "basic"
