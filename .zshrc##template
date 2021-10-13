@@ -14,7 +14,7 @@ source $ZPLUG_HOME/init.zsh
 # zplug in Arch linux via Aur
 source /usr/share/zsh/scripts/zplug/init.zsh
 {% endif %}
-{% if yadm.distro == "Linux x86_64" %}
+{% if yadm.distro == "Ubuntu" %}
 # zplug installed from source
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
@@ -160,7 +160,7 @@ export NVM_DIR="$HOME/.nvm"
 # nvm in arch linux via aur
 [ -s "/usr/share/nvm/init-nvm.sh" ] && source "/usr/share/nvm/init-nvm.sh"  # This loads nvm convenience script
 {% endif %}
-{% if yadm.distro == "Linux x86_64" %}
+{% if yadm.distro == "Ubuntu" %}
 # nvm installed from source
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
