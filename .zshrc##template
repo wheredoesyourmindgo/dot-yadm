@@ -147,7 +147,8 @@ function vim {
 # Banner
 #neofetch --color_blocks off | lolcat
 #fortune | cowsay
-fortune | cowsay -f small | lolcat
+#fortune | cowsay -f small | lolcat
+fortune | cowsay | lolcat
 
 export NVM_DIR="$HOME/.nvm"
 # nvm init
