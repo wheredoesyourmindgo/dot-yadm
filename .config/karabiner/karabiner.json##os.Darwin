@@ -3915,8 +3915,74 @@
             ]
           },
           {
-            "description": "Use Colemak-DH [D]",
+            "description": "Use Colemak-DH-ring [D]",
             "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "y"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "w"
+                },
+                "type": "basic"
+              },
               {
                 "conditions": [
                   {
@@ -4210,7 +4276,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "i"
+                  "key_code": "a"
                 },
                 "type": "basic"
               },
@@ -4309,7 +4375,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "y"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
@@ -4408,7 +4474,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "r"
+                  "key_code": "i"
                 },
                 "type": "basic"
               },
@@ -4441,7 +4507,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "a"
+                  "key_code": "r"
                 },
                 "type": "basic"
               },
