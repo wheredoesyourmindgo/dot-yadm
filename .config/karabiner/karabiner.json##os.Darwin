@@ -48,7 +48,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "v",
+                    "key_code": "k",
                     "modifiers": [
                       "command"
                     ]
@@ -4407,7 +4407,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "k"
+                  "key_code": "v"
                 },
                 "type": "basic"
               },
