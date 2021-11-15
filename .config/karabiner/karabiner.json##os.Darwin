@@ -3578,7 +3578,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "j"
                 },
                 "type": "basic"
               },
@@ -3609,7 +3609,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "w"
+                  "key_code": "z"
                 },
                 "type": "basic"
               },
@@ -3702,7 +3702,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "f"
+                  "key_code": "l"
                 },
                 "type": "basic"
               },
@@ -4043,7 +4043,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "p"
+                  "key_code": "w"
                 },
                 "type": "basic"
               },
@@ -4099,75 +4099,13 @@
                   }
                 ],
                 "from": {
-                  "key_code": "semicolon",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": {
-                  "key_code": "r"
-                },
-                "type": "basic"
-              },
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": {
-                  "key_code": "o"
-                },
-                "type": "basic"
-              },
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
                   "key_code": "t",
                   "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
-                  "key_code": "b"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
@@ -4198,7 +4136,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "l"
+                  "key_code": "f"
                 },
                 "type": "basic"
               },
@@ -4260,7 +4198,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "b"
                 },
                 "type": "basic"
               }
