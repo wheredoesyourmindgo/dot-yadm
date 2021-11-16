@@ -3572,6 +3572,37 @@
                   }
                 ],
                 "from": {
+                  "key_code": "y",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": {
+                  "key_code": "j"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
                   "key_code": "q",
                   "modifiers": {
                     "optional": ["any"]
@@ -4168,37 +4199,6 @@
                 },
                 "to": {
                   "key_code": "d"
-                },
-                "type": "basic"
-              },
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": {
-                  "key_code": "b"
                 },
                 "type": "basic"
               }
