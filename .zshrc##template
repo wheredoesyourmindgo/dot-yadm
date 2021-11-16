@@ -3,7 +3,6 @@
 
 # skip line after command
 precmd() { print "" }
-e
 # zplug init
 {% if yadm.os == "Darwin" %}
 # use Homebrew version of zplug w/ MacOS
