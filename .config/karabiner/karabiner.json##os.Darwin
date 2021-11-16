@@ -3578,7 +3578,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "b"
                 },
                 "type": "basic"
               },
@@ -3702,7 +3702,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "l"
+                  "key_code": "f"
                 },
                 "type": "basic"
               },
@@ -4136,7 +4136,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "f"
+                  "key_code": "l"
                 },
                 "type": "basic"
               },
@@ -4192,7 +4192,7 @@
                   }
                 ],
                 "from": {
-                  "key_code": "y",
+                  "key_code": "j",
                   "modifiers": {
                     "optional": ["any"]
                   }
