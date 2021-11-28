@@ -107,7 +107,7 @@ alias jenv-init='if which jenv > /dev/null; then eval "$(jenv init -)"; fi'
 
 # assume i wan't to update atom
 alias apmu='apm update --no-confirm'
-alias bu='brew update && brew upgrade'
+alias brewu='brew update && brew upgrade'
 
 alias download='$HOME/.download.sh'
 
