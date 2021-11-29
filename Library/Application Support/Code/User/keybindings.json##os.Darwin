@@ -83,7 +83,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "alt+/",
+    "key": "alt+.",
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
   },
