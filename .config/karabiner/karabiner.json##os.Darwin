@@ -3702,7 +3702,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "b"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
@@ -4198,7 +4198,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "p"
+                  "key_code": "b"
                 },
                 "type": "basic"
               },
