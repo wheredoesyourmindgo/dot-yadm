@@ -18,7 +18,7 @@ export SPACESHIP_CHAR_SYMBOL=\❯
 #export SPACESHIP_CHAR_SUFFIX=" "
 
 # /Library/Tex/texbin for use with chktext. See `brew info checktex`
-export PATH="$HOME/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/Library/TeX/texbin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/homebrew/bin:$PATH"
 
 ### Homebrew pkgs
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

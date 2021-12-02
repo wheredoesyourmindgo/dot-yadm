@@ -5,7 +5,7 @@
 precmd() { print "" }
 # zplug init
 {% if yadm.os == "Darwin" %}
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(brew shellenv)"
 {% endif %}
 {% if yadm.os == "Darwin" %}
 # use Homebrew version of zplug w/ MacOS
