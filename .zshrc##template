@@ -5,6 +5,9 @@
 precmd() { print "" }
 # zplug init
 {% if yadm.os == "Darwin" %}
+eval "$(/opt/homebrew/bin/brew shellenv)"
+{% endif %}
+{% if yadm.os == "Darwin" %}
 # use Homebrew version of zplug w/ MacOS
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
@@ -153,8 +156,8 @@ export NVM_DIR="$HOME/.nvm"
 # nvm init
 {% if yadm.os == "Darwin" %}
 # use homebrew version of nvm w/ macos
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 {% endif %}
 {% if yadm.distro == "Arch" %}
 # nvm in arch linux via aur
