@@ -50,7 +50,8 @@ if [ ! -d "$HOME/.zplug" ]; then
   export ZPLUG_HOME=$HOME/.zplug
   mkdir -p $ZPLUG_HOME
   git clone -q https://github.com/zplug/zplug $ZPLUG_HOME
-  source $ZPLUG_HOME/init.zsh
+  #source $ZPLUG_HOME/init.zsh
+  source $HOME/.zshrc
   zplug install
 fi
 
