@@ -43,3 +43,15 @@ if command -v vim >/dev/null 2>&1; then
   echo "Bootstraping Vim"
   vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
 fi
+
+# install zplug from source
+if [ ! -d "$HOME/.zplug" ]; then
+  echo "Installing Zplug"
+  export ZPLUG_HOME=$HOME/.zplug
+  mkdir -p $ZPLUG_HOME
+  git clone -q https://github.com/zplug/zplug $ZPLUG_HOME
+  source $ZPLUG_HOME/init.zsh
+  zplug install
+fi
+
+
