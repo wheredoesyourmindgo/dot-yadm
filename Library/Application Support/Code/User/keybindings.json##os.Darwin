@@ -95,7 +95,7 @@
   {
     "key": "Enter",
     "command": "workbench.action.showCommands",
-    "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus"
+    "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && editorFocused"
   },
   {
     "key": "ctrl+`",
