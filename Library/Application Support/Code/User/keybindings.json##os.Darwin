@@ -73,12 +73,7 @@
     "command": "-git.viewFileHistory"
   },
   {
-    "key": "alt+h",
-    "command": "-gitlens.showQuickFileHistory",
-    "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
-  },
-  {
-    "key": "alt+h",
+    "key": "alt+w",
     "command": "editor.action.addSelectionToPreviousFindMatch",
     "when": "editorFocus"
   },
