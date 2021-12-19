@@ -3609,7 +3609,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "f"
                 },
                 "type": "basic"
               },
@@ -4012,7 +4012,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "w"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
@@ -4260,7 +4260,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "f"
+                  "key_code": "w"
                 },
                 "type": "basic"
               },
