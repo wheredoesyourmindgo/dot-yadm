@@ -246,3 +246,22 @@ noremap <silent> <leader><esc> :noh<cr>
 
 
 "let g:clever_f_smart_case=1
+
+" hybrid line numbers
+" turn hybrid line numbers on
+:set number relativenumber
+:set nu rnu
+" turn hybrid line numbers off
+:set nonumber norelativenumber
+:set nonu nornu
+" toggle hybrid line numbers
+:set number! relativenumber!
+:set nu! rnu!
+
+" auto-toggle hybrid line numbers
+:set number
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
