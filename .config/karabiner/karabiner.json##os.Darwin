@@ -2302,7 +2302,7 @@
                   }
                 ],
                 "from": {
-                  "key_code": "t",
+                  "key_code": "z",
                   "modifiers": {
                     "optional": ["any"]
                   }
@@ -2401,7 +2401,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
@@ -2464,6 +2464,37 @@
                 },
                 "to": {
                   "key_code": "period"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "equal_sign",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": {
+                  "key_code": "slash"
                 },
                 "type": "basic"
               }
