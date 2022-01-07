@@ -1874,7 +1874,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
@@ -2302,13 +2302,13 @@
                   }
                 ],
                 "from": {
-                  "key_code": "s",
+                  "key_code": "caps_lock",
                   "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
-                  "key_code": "r"
+                  "key_code": "z"
                 },
                 "type": "basic"
               },
@@ -2333,13 +2333,13 @@
                   }
                 ],
                 "from": {
-                  "key_code": "z",
+                  "key_code": "s",
                   "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "r"
                 },
                 "type": "basic"
               },
@@ -2426,13 +2426,44 @@
                   }
                 ],
                 "from": {
+                  "key_code": "grave_accent_and_tilde",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": {
+                  "key_code": "caps_lock"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
                   "key_code": "comma",
                   "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "grave_accent_and_tilde"
                 },
                 "type": "basic"
               },
