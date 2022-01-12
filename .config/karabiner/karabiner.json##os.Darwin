@@ -1899,7 +1899,7 @@
                   }
                 ],
                 "from": {
-                  "key_code": "h",
+                  "key_code": "p",
                   "modifiers": {
                     "optional": ["any"]
                   }
@@ -2184,7 +2184,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "p"
+                  "key_code": "g"
                 },
                 "type": "basic"
               },
