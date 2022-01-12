@@ -1564,7 +1564,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "l"
+                  "key_code": "j"
                 },
                 "type": "basic"
               },
@@ -1595,7 +1595,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "quote"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
@@ -1626,7 +1626,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "y"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
@@ -1657,7 +1657,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "l"
                 },
                 "type": "basic"
               },
@@ -1688,7 +1688,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "y"
                 },
                 "type": "basic"
               },
@@ -2122,7 +2122,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "hyphen"
+                  "key_code": "equal_sign"
                 },
                 "type": "basic"
               },
@@ -2246,7 +2246,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "equal_sign"
+                  "key_code": "hyphen"
                 },
                 "type": "basic"
               },
@@ -2463,7 +2463,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "quote"
                 },
                 "type": "basic"
               },
