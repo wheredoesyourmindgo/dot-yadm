@@ -1564,7 +1564,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "l"
                 },
                 "type": "basic"
               },
@@ -1626,7 +1626,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "y"
                 },
                 "type": "basic"
               },
@@ -1657,7 +1657,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "l"
+                  "key_code": "j"
                 },
                 "type": "basic"
               },
@@ -1688,7 +1688,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "f"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
@@ -1719,7 +1719,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "v"
+                  "key_code": "k"
                 },
                 "type": "basic"
               },
@@ -1874,7 +1874,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "z"
                 },
                 "type": "basic"
               },
@@ -1905,7 +1905,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "y"
+                  "key_code": "g"
                 },
                 "type": "basic"
               },
@@ -1967,7 +1967,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "c"
+                  "key_code": "d"
                 },
                 "type": "basic"
               },
@@ -2060,7 +2060,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "p"
+                  "key_code": "c"
                 },
                 "type": "basic"
               },
@@ -2091,7 +2091,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "m"
+                  "key_code": "f"
                 },
                 "type": "basic"
               },
@@ -2184,7 +2184,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "g"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
@@ -2277,7 +2277,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "k"
+                  "key_code": "v"
                 },
                 "type": "basic"
               },
@@ -2308,7 +2308,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "grave_accent_and_tilde"
                 },
                 "type": "basic"
               },
@@ -2401,7 +2401,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "d"
+                  "key_code": "m"
                 },
                 "type": "basic"
               },
@@ -2463,7 +2463,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "grave_accent_and_tilde"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
