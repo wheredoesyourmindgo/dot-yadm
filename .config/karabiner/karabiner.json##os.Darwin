@@ -1564,7 +1564,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "l"
                 },
                 "type": "basic"
               },
@@ -1626,7 +1626,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "v"
                 },
                 "type": "basic"
               },
@@ -1657,7 +1657,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "l"
+                  "key_code": "j"
                 },
                 "type": "basic"
               },
@@ -1688,7 +1688,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "y"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
@@ -1719,7 +1719,38 @@
                   }
                 },
                 "to": {
-                  "key_code": "k"
+                  "key_code": "b"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": {
+                  "key_code": "g"
                 },
                 "type": "basic"
               },
@@ -1750,7 +1781,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "n"
+                  "key_code": "h"
                 },
                 "type": "basic"
               },
@@ -1781,7 +1812,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "h"
+                  "key_code": "d"
                 },
                 "type": "basic"
               },
@@ -1812,7 +1843,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "b"
+                  "key_code": "m"
                 },
                 "type": "basic"
               },
@@ -1843,7 +1874,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "t"
+                  "key_code": "n"
                 },
                 "type": "basic"
               },
@@ -1905,7 +1936,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "g"
+                  "key_code": "hyphen"
                 },
                 "type": "basic"
               },
@@ -1967,7 +1998,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "d"
+                  "key_code": "t"
                 },
                 "type": "basic"
               },
@@ -2060,7 +2091,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "c"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
@@ -2091,7 +2122,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "f"
+                  "key_code": "y"
                 },
                 "type": "basic"
               },
@@ -2184,7 +2215,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "g"
+                  "key_code": "k"
                 },
                 "type": "basic"
               },
@@ -2277,7 +2308,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "v"
+                  "key_code": "w"
                 },
                 "type": "basic"
               },
@@ -2370,7 +2401,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "w"
+                  "key_code": "f"
                 },
                 "type": "basic"
               },
@@ -2401,7 +2432,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "m"
+                  "key_code": "c"
                 },
                 "type": "basic"
               },

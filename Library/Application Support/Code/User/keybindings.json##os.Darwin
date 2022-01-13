@@ -73,7 +73,7 @@
     "command": "-git.viewFileHistory"
   },
   {
-    "key": "alt+c",
+    "key": "alt+p",
     "command": "editor.action.addSelectionToPreviousFindMatch",
     "when": "editorFocus"
   },
