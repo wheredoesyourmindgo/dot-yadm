@@ -97,7 +97,7 @@
     "command": "-workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "alt+h",
+    "key": "alt+d",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
