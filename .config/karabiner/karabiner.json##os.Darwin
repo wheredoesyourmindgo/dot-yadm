@@ -2180,11 +2180,44 @@
                 "from": {
                   "key_code": "hyphen",
                   "modifiers": {
+                    "mandatory": ["shift"]
+                  }
+                },
+                "to": {
+                  "key_code": "period",
+                  "modifiers": ["shift"]
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "hyphen",
+                  "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
-                  "key_code": "semicolon"
+                  "key_code": "comma",
+                  "modifiers": ["shift"]
                 },
                 "type": "basic"
               },
@@ -2521,11 +2554,74 @@
                 "from": {
                   "key_code": "period",
                   "modifiers": {
+                    "mandatory": ["shift"]
+                  }
+                },
+                "to": {
+                  "key_code": "semicolon"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "period",
+                  "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": {
                   "key_code": "comma"
+                },
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 835,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "slash",
+                  "modifiers": {
+                    "mandatory": ["shift"]
+                  }
+                },
+                "to": {
+                  "key_code": "semicolon",
+                  "modifiers": ["shift"]
                 },
                 "type": "basic"
               },
