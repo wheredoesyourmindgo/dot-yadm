@@ -20,7 +20,7 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'wheredoesyourmindgo/vim-byoa', { 'branch': 'main' }
+Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
 "Plug 'rhysd/clever-f.vim'
 "Plug 'relastle/bluewery.vim'
 Plug 'jonathanfilip/vim-lucius'
