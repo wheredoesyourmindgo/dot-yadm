@@ -4,22 +4,6 @@ system_type=$(uname -s)
 
 # install Homebrew and a bundle of recipes
 if [ "$system_type" = "Darwin" ]; then
-
-  # install homebrew if it's missing
-  if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  fi
-
-  if [ -f "$HOME/.Brewfile" ]; then
-    echo "Updating homebrew bundle"
-    brew bundle --global
-  fi
-  echo "Updating homebrew packages"
-  brew upgrade
-  echo "Cleaning homebrew cache"
-  brew cleanup -s
-
   # Copy fonts to ~/Library/Fonts
   echo "Copying fonts to user folder"
   # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
