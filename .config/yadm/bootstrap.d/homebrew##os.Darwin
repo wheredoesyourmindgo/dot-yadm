@@ -1,9 +1,10 @@
 #!/bin/sh
 
-uid=$(id -u -n)
+user=$(id -u -n)
+admin_user=$(ls -l $1 | awk '{print $3}');
 
 # install Homebrew and a bundle of recipes
-if [ "$uid" = "abe" || "$uid" = "ah"  ]; then
+if [ "$user" = "$admin_user" ]; then
 
   # install homebrew if it's missing
   if ! command -v brew >/dev/null 2>&1; then
