@@ -992,27 +992,6 @@
             ]
           },
           {
-            "description": "Delete to Line End",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "delete_forward",
-                  "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "k",
-                    "modifiers": ["control"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Change Fn-1 to F1 [D]",
             "manipulators": [
               {
