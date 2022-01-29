@@ -1751,7 +1751,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "z"
                 },
                 "type": "basic"
               },
@@ -1996,7 +1996,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "z"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
