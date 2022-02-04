@@ -102,12 +102,12 @@
             ]
           },
           {
-            "description": "Change Menu to Fn",
+            "description": "Change Execute to Fn",
             "manipulators": [
               {
                 "conditions": [],
                 "from": {
-                  "key_code": "menu"
+                  "key_code": "execute"
                 },
                 "to": [
                   {
