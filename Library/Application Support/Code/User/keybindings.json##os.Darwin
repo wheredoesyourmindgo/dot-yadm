@@ -205,4 +205,21 @@
     "key": "alt+t",
     "command": "workbench.action.showAllSymbols"
   }
+  // ex. vim mappings. note - map re-mapped commads, not original commands (yank --> 'm', change --> 'd', so forth).
+  // {
+  //   "key": "alt+...",
+  //   "command": "vim.remap",
+  //   "when": "inputFocus && vim.mode == 'Normal'",
+  //   "args": {
+  //     "after": ["m", "m"]
+  //   }
+  // },
+  // {
+  //   "key": "alt+...",
+  //   "command": "vim.remap",
+  //   "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')",
+  //   "args": {
+  //     "after": ["d", "d"]
+  //   }
+  // }
 ]

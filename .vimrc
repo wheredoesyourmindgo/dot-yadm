@@ -21,6 +21,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
+Plug 'bkad/CamelCaseMotion'
 "Plug 'rhysd/clever-f.vim'
 "Plug 'relastle/bluewery.vim'
 Plug 'jonathanfilip/vim-lucius'
