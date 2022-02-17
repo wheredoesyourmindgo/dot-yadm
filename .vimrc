@@ -22,6 +22,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
 Plug 'bkad/CamelCaseMotion'
+Plug 'chrisbra/matchit'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 "Plug 'rhysd/clever-f.vim'
 "Plug 'relastle/bluewery.vim'
 Plug 'jonathanfilip/vim-lucius'
@@ -266,3 +268,6 @@ noremap <silent> <leader><esc> :noh<cr>
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
 :  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 :augroup END
+
+" use matchit plugin
+:packadd! matchit
