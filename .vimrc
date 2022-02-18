@@ -271,3 +271,7 @@ noremap <silent> <leader><esc> :noh<cr>
 
 " use matchit plugin
 :packadd! matchit
+
+" setup folding
+set nofoldenable
+set foldmethod=syntax
