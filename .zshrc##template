@@ -41,7 +41,7 @@ alias pipenvjup='pipenv run jupyter notebook --no-browser --port=8888 --Notebook
 alias kill_rsnapshot="sudo kill -9 $(ps -e | grep rsnapshot | awk '{print $1}')"
 alias flush_dns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache flushed"
 alias c="clear"
-alias li="ls -l"
+alias li="ls"
 # method 1
 #alias neofetch="${aliases[neofetch]-neofetch} --block_range 0 15"
 # method 2
