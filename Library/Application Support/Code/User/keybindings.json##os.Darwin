@@ -80,7 +80,7 @@
   {
     "key": "Enter",
     "command": "workbench.action.showCommands",
-    "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && editorFocused"
+    "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus || !vim.active"
   },
   {
     "key": "ctrl+`",
