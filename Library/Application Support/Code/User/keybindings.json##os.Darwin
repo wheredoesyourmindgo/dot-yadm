@@ -77,11 +77,12 @@
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
-  {
-    "key": "Enter",
-    "command": "workbench.action.showCommands",
-    "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus || !vim.active"
-  },
+  // if I figure out how to prevent 'show all commans' from popping up after a file/folder is renamed in explorer view i will re-enable this
+  // {
+  //   "key": "Enter",
+  //   "command": "workbench.action.showCommands",
+  //   "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && !renameInputVisible && !textInputFocus"
+  // },
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
