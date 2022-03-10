@@ -2,7 +2,7 @@
   "global": {
     "check_for_updates_on_startup": true,
     "show_in_menu_bar": false,
-    "show_profile_name_in_menu_bar": false
+    "show_profile_name_in_menu_bar": true
   },
   "profiles": [
     {
@@ -1508,7 +1508,7 @@
             ]
           },
           {
-            "description": "Use Miscreanty layout [D]",
+            "description": "Use Serenity layout [D]",
             "manipulators": [
               {
                 "conditions": [
@@ -2907,6 +2907,2391 @@
                 "to": {
                   "key_code": "slash"
                 },
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 50475,
+            "vendor_id": 1133
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 4640,
+            "vendor_id": 17498
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 4640,
+            "vendor_id": 17498
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 256,
+            "vendor_id": 2131
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 628,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 0,
+            "vendor_id": 0
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 34304,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 6592,
+            "vendor_id": 65261
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 6592,
+            "vendor_id": 65261
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 1042,
+            "vendor_id": 63456
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 21303,
+            "vendor_id": 52685
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f13"
+              },
+              "to": [
+                {
+                  "key_code": "f13"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f14"
+              },
+              "to": [
+                {
+                  "key_code": "f14"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f15"
+              },
+              "to": [
+                {
+                  "key_code": "f15"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f16"
+              },
+              "to": [
+                {
+                  "key_code": "f16"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f17"
+              },
+              "to": [
+                {
+                  "key_code": "f17"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f18"
+              },
+              "to": [
+                {
+                  "key_code": "f18"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f19"
+              },
+              "to": [
+                {
+                  "key_code": "f19"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f20"
+              },
+              "to": [
+                {
+                  "key_code": "f20"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 24672,
+            "vendor_id": 65261
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 20835,
+            "vendor_id": 61927
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 42233,
+            "vendor_id": 936
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 17031,
+            "vendor_id": 16969
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 17031,
+            "vendor_id": 16969
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 42233,
+            "vendor_id": 936
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 17030,
+            "vendor_id": 16969
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 17030,
+            "vendor_id": 16969
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 121,
+            "vendor_id": 17011
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 121,
+            "vendor_id": 17011
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 29299,
+            "vendor_id": 26219
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f1"
+              },
+              "to": [
+                {
+                  "key_code": "f1"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f2"
+              },
+              "to": [
+                {
+                  "key_code": "f2"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "key_code": "f3"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f4"
+              },
+              "to": [
+                {
+                  "key_code": "f4"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f5"
+              },
+              "to": [
+                {
+                  "key_code": "f5"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f6"
+              },
+              "to": [
+                {
+                  "key_code": "f6"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f8"
+              },
+              "to": [
+                {
+                  "key_code": "f8"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f9"
+              },
+              "to": [
+                {
+                  "key_code": "f9"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f10"
+              },
+              "to": [
+                {
+                  "key_code": "f10"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f11"
+              },
+              "to": [
+                {
+                  "key_code": "f11"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "f12"
+              },
+              "to": [
+                {
+                  "key_code": "f12"
+                }
+              ]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 5,
+            "vendor_id": 12901
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        }
+      ],
+      "fn_function_keys": [
+        {
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "key_code": "f17"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "key_code": "f18"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f3"
+          },
+          "to": [
+            {
+              "key_code": "mission_control"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f4"
+          },
+          "to": [
+            {
+              "key_code": "launchpad"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "key_code": "illumination_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f6"
+          },
+          "to": [
+            {
+              "key_code": "illumination_increment"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f7"
+          },
+          "to": [
+            {
+              "consumer_key_code": "rewind"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f8"
+          },
+          "to": [
+            {
+              "consumer_key_code": "play_or_pause"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f9"
+          },
+          "to": [
+            {
+              "consumer_key_code": "fast_forward"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f10"
+          },
+          "to": [
+            {
+              "consumer_key_code": "mute"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f11"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f12"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_increment"
+            }
+          ]
+        }
+      ],
+      "name": "Serenity",
+      "parameters": {
+        "delay_milliseconds_before_open_device": 1000
+      },
+      "selected": false,
+      "simple_modifications": [],
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "indicate_sticky_modifier_keys_state": true,
+        "mouse_key_xy_scale": 100
+      }
+    },
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.simultaneous_threshold_milliseconds": 50,
+          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_if_alone_timeout_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 500,
+          "mouse_motion_to_scroll.speed": 100
+        },
+        "rules": [
+          {
+            "description": "Change Execute to Fn",
+            "manipulators": [
+              {
+                "conditions": [],
+                "from": {
+                  "key_code": "execute"
+                },
+                "to": [
+                  {
+                    "key_code": "fn"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Volume Up",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21"
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "volume_increment"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Volume Down",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19"
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "volume_decrement"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Mute",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20"
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "mute"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Screen Brighter",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f18"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Screen Dimmer",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f17"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Dark Mode Toggle",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "d",
+                    "modifiers": ["command", "control", "shift", "option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom Out",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "hyphen",
+                    "modifiers": ["left_command", "left_alt"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoon In",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "equal_sign",
+                    "modifiers": ["left_command", "left_alt"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom Toggle",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "8",
+                    "modifiers": ["left_command", "left_alt"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom Out App",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "hyphen",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom In App",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "equal_sign",
+                    "modifiers": ["left_command", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Reset Zoom App",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "0",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next Tab",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24"
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev Tab",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22"
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["left_control", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 New Tab",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23"
+                },
+                "to": [
+                  {
+                    "key_code": "t",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev Media Track",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "rewind"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next Media Track",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "fast_forward"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Play/Pause Media",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "play_or_pause"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev App (left-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["left_command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next App (left-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev App (right-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["right_command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next App (right-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["right_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Mission Control",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "up_arrow",
+                    "modifiers": ["control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev Space",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next Space",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Full Screen",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f",
+                    "modifiers": ["control", "command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev Window",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next Window",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 App Windows",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17030,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "down_arrow",
+                    "modifiers": ["control"]
+                  }
+                ],
                 "type": "basic"
               }
             ]
