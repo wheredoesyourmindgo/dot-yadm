@@ -3413,7 +3413,7 @@
                 "from": {
                   "key_code": "f20",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
