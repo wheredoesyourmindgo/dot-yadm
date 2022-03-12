@@ -217,7 +217,7 @@
                 "from": {
                   "key_code": "f21",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
@@ -247,7 +247,7 @@
                 "from": {
                   "key_code": "f19",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
@@ -3353,7 +3353,7 @@
                 "from": {
                   "key_code": "f21",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
@@ -3383,7 +3383,7 @@
                 "from": {
                   "key_code": "f19",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
