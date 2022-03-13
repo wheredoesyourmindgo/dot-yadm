@@ -291,6 +291,97 @@
             ]
           },
           {
+            "description": "BNR1 App Switcher Next",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 App Switcher Previous",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": "shift"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 App Switcher Hide",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "h"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "BNR1 Zoom Out",
             "manipulators": [
               {
@@ -3420,6 +3511,97 @@
                   {
                     "key_code": "d",
                     "modifiers": ["command", "control", "shift", "option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 App Switcher Next",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f21",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 App Switcher Previous",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": "shift"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 App Switcher Hide",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "optional": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "h"
                   }
                 ],
                 "type": "basic"
