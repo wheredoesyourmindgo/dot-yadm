@@ -1737,7 +1737,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "b"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
@@ -1912,7 +1912,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "g"
+                  "key_code": "y"
                 },
                 "type": "basic"
               },
@@ -2052,7 +2052,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "p"
+                  "key_code": "g"
                 },
                 "type": "basic"
               },
@@ -2122,7 +2122,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "b"
                 },
                 "type": "basic"
               },
@@ -2363,7 +2363,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "y"
+                  "key_code": "p"
                 },
                 "type": "basic"
               },
