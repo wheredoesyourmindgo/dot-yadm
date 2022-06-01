@@ -1772,7 +1772,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
@@ -1842,7 +1842,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "x"
+                  "key_code": "q"
                 },
                 "type": "basic"
               },
