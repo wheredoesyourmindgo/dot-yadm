@@ -1807,7 +1807,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "j"
+                  "key_code": "x"
                 },
                 "type": "basic"
               },
@@ -1877,7 +1877,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "q"
+                  "key_code": "z"
                 },
                 "type": "basic"
               },
