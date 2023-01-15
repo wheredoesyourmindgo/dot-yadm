@@ -2064,7 +2064,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "k"
+                  "key_code": "h"
                 },
                 "type": "basic"
               },
@@ -2340,7 +2340,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "h"
+                  "key_code": "k"
                 },
                 "type": "basic"
               },
