@@ -221,6 +221,10 @@
                       {
                         "product_id": 17031,
                         "vendor_id": 16969
+                      },
+                      {
+                        "product_id": 6,
+                        "vendor_id": 19788
                       }
                     ],
                     "type": "device_if"
@@ -251,6 +255,10 @@
                       {
                         "product_id": 17031,
                         "vendor_id": 16969
+                      },
+                      {
+                        "product_id": 6,
+                        "vendor_id": 19788
                       }
                     ],
                     "type": "device_if"
@@ -281,6 +289,10 @@
                       {
                         "product_id": 17031,
                         "vendor_id": 16969
+                      },
+                      {
+                        "product_id": 6,
+                        "vendor_id": 19788
                       }
                     ],
                     "type": "device_if"
