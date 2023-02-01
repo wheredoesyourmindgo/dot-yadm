@@ -12,14 +12,21 @@ if [ "$system_type" = "Darwin" ]; then
   unzip -quo ~/Downloads/yadm-extra-fonts.zip -x / -d ~/Library/Fonts/
   rm ~/Downloads/yadm-extra-fonts.zip
 
-    # Copy fonts to ~/Library/Services
+  # Copy services to ~/Library/Services
   echo "Copying Services to user folder"
   # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
   curl --http1.1 -sL "https://www.dropbox.com/sh/imjnxu278nmrn18/AADQ7pp4XycdP7igy0ARa0R2a?dl=1" --output ~/Downloads/yadm-extra-services.zip
   # only copy newer files and overwrite. q will copy quietly (qq for very quiet). Specify target directory with d. -x / should suppress warnings during unzip, see https://stackoverflow.com/questions/21322416/unzip-warning-and-mapname for more info.
   unzip -quo ~/Downloads/yadm-extra-services.zip -x / -d ~/Library/Services/
   rm ~/Downloads/yadm-extra-services.zip
-
+elif [ "$system_type" = "Linux" ]; then
+  # Copy fonts to ~/.fonts
+  echo "Copying fonts to user folder"
+  # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
+  curl --http1.1 -sL "https://www.dropbox.com/sh/tmwgqdh7yh4nr61/AAC4CzYolyMUwN_RY209Lhjda?dl=1" --output ~/Downloads/yadm-extra-fonts.zip
+  # only copy newer files and overwrite. q will copy quietly (qq for very quiet). Specify target directory with d. -x / should suppress warnings during unzip, see https://stackoverflow.com/questions/21322416/unzip-warning-and-mapname for more info.
+  unzip -quo ~/Downloads/yadm-extra-fonts.zip -x / -d ~/.fonts/
+  rm ~/Downloads/yadm-extra-fonts.zip
 fi
 
 # install Vim plugins
