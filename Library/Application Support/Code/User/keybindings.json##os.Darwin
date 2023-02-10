@@ -77,12 +77,16 @@
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
-  // if I figure out how to prevent 'show all commans' from popping up after a file/folder is renamed in explorer view i will re-enable this
-  // {
-  //   "key": "Enter",
-  //   "command": "workbench.action.showCommands",
-  //   "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && !renameInputVisible && !textInputFocus"
-  // },
+  /*
+  !inputFocus - prevents 'show all commands' from popping up after hitting enter in the search/replace dialog input, and the marketplace search input (and likely other inputs).
+  !focusedView - prevents 'show all commands' from popping up after a file/folder is renamed in explorer view
+  */
+  {
+    "key": "Enter",
+    "command": "workbench.action.showCommands",
+    // "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && !renameInputVisible && !textInputFocus"
+    "when": "!inputFocus && !focusedView"
+  },
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
