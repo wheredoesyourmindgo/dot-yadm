@@ -6,6 +6,7 @@ precmd() { print "" }
 {% if yadm.os == "Darwin" %}
 eval "$(brew shellenv)"
 {% endif %}
+
 # zplug init using source
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
@@ -161,6 +162,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 {% endif %}
+{% if yadm.distro == "FreeBSD" %}
+# nvm installed from source
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+{% endif %}
 
 # Auto switch using .nvmrc
 autoload -Uz add-zsh-hook
@@ -199,8 +205,13 @@ bindkey "^X^_" redo
 # autoload -U promptinit; promptinit
 #prompt spaceship
 
-{% if yadm.os == "Linux" %}
 # keychain
+{% if yadm.os == "Linux" %}
+if command -v keychain 1>/dev/null 2>&1; then
+  eval $(keychain --eval --quiet id_rsa)
+fi
+{% endif %}
+{% if yadm.os == "FreeBSD" %}
 if command -v keychain 1>/dev/null 2>&1; then
   eval $(keychain --eval --quiet id_rsa)
 fi

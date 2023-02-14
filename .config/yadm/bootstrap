@@ -6,6 +6,7 @@ system_type=$(uname -s)
 if [ "$system_type" = "Darwin" ]; then
   # Copy fonts to ~/Library/Fonts
   echo "Copying fonts to user folder"
+  mkdir -p ~/Downloads
   # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
   curl --http1.1 -sL "https://www.dropbox.com/sh/tmwgqdh7yh4nr61/AAC4CzYolyMUwN_RY209Lhjda?dl=1" --output ~/Downloads/yadm-extra-fonts.zip
   # only copy newer files and overwrite. q will copy quietly (qq for very quiet). Specify target directory with d. -x / should suppress warnings during unzip, see https://stackoverflow.com/questions/21322416/unzip-warning-and-mapname for more info.
@@ -22,6 +23,18 @@ if [ "$system_type" = "Darwin" ]; then
 elif [ "$system_type" = "Linux" ]; then
   # Copy fonts to ~/.fonts
   echo "Copying fonts to user folder"
+  mkdir -p ~/Downloads
+  mkdir -p ~/.fonts
+  # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
+  curl --http1.1 -sL "https://www.dropbox.com/sh/tmwgqdh7yh4nr61/AAC4CzYolyMUwN_RY209Lhjda?dl=1" --output ~/Downloads/yadm-extra-fonts.zip
+  # only copy newer files and overwrite. q will copy quietly (qq for very quiet). Specify target directory with d. -x / should suppress warnings during unzip, see https://stackoverflow.com/questions/21322416/unzip-warning-and-mapname for more info.
+  unzip -quo ~/Downloads/yadm-extra-fonts.zip -x / -d ~/.fonts/
+  rm ~/Downloads/yadm-extra-fonts.zip
+elif [ "$system_type" = "FreeBSD" ]; then
+  # Copy fonts to ~/.fonts
+  echo "Copying fonts to user folder"
+  mkdir -p ~/Downloads
+  mkdir -p ~/.fonts
   # uri generated on Dropbox website using 'copy share link' button for target folder, then change dl param to 1.
   curl --http1.1 -sL "https://www.dropbox.com/sh/tmwgqdh7yh4nr61/AAC4CzYolyMUwN_RY209Lhjda?dl=1" --output ~/Downloads/yadm-extra-fonts.zip
   # only copy newer files and overwrite. q will copy quietly (qq for very quiet). Specify target directory with d. -x / should suppress warnings during unzip, see https://stackoverflow.com/questions/21322416/unzip-warning-and-mapname for more info.
