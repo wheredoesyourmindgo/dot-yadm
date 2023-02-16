@@ -9,11 +9,11 @@ module.exports = {
     updateChannel: "stable",
 
     // default font size in pixels for all tabs
-    fontSize: 13.7,
+    fontSize: 17,
 
     // font family with optional fallbacks
     fontFamily:
-      'Sudo Nerd Font, FiraCode-Retina, PragmataPro Mono, Cascadia Code PL, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      'Sudo Var, FiraCode-Retina, PragmataPro Mono, Cascadia Code PL, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -91,7 +91,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF"
+      lightWhite: "#FFFFFF",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -147,8 +147,8 @@ module.exports = {
       contrast: "normal", // or 'normal', 'soft', or 'hard',
       palette: "original", // or 'material', 'original, 'mix'
       accentColor: "yellow", //   black, red, green, yellow, blue, magenta, cyan, white
-      vibrancy: true
-    }
+      vibrancy: true,
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -167,5 +167,5 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-  }
+  },
 };
