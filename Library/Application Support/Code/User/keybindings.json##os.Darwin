@@ -239,6 +239,10 @@
     "args": {
       "after": ["0"]
     }
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.files.newUntitledFile"
   }
   // {
   //   "key": "home",
