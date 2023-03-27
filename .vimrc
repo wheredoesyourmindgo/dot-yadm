@@ -9,11 +9,11 @@ else
   set background=dark
 endif
 
-" download vim-plug if missing
-if empty(glob("~/.vim/autoload/plug.vim"))
-  silent! execute '!curl --create-dirs -fsSLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * silent! PlugInstall
-endif
+" download vim-plug if missing (this is handled by yadm bootstrap)
+" if empty(glob("~/.vim/autoload/plug.vim"))
+"   silent! execute '!curl --create-dirs -fsSLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+"   autocmd VimEnter * silent! PlugInstall
+" endif
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -51,7 +51,7 @@ Plug 'preservim/nerdcommenter'
 " Indent Lines
 Plug 'Yggdroot/indentLine'
 
-" Gruvbox 
+" Gruvbox
 "Plug 'morhetz/gruvbox'
 "Plug 'wheredoesyourmindgo/gruvbox-fork' " Forked from 'morhetz/gruvbox'
 "Plug 'wheredoesyourmindgo/gruvbox-material-fork' " Forked from 'sainnhe/gruvbox-material'
@@ -64,7 +64,7 @@ Plug 'lifepillar/vim-solarized8'
 "Plug 'Valloric/MatchTagAlways'
 
 "Plug 'leafgarland/typescript-vim' " Covered by vim-polyglot.
-"Plug 'peitalin/vim-jsx-typescript' 
+"Plug 'peitalin/vim-jsx-typescript'
 "Plug 'HerringtonDarkholme/yats.vim' " Included in Vim 8.2+.
 
 " Airline
@@ -141,15 +141,15 @@ let g:airline_theme='solarized'
  ""\ }
 
 " Lucius
-""let g:lucius_style='dark'  " (default: 'dark') 
-"" Set this option to either 'light' or 'dark' for your desired color scheme. It has the same effect as setting the background. 
-"let g:lucius_contrast='normal'  " (default: 'normal') 
-"" This option determines the contrast to use for text/ui elements. It can be set to 'low', 'normal', or 'high'. At this time there is no 'high' for the light scheme. 
-"let g:lucius_contrast_bg='normal' " (default: 'normal') 
-""Setting this option makes the background a higher contrast. Current settings are 'normal' and 'high'. 
-"let g:lucius_use_bold=1 " (default: 1) 
-"" Setting this will cause the color scheme to use bold fonts for some items. 
-"let g:lucius_use_underline=1 " (default: 1) 
+""let g:lucius_style='dark'  " (default: 'dark')
+"" Set this option to either 'light' or 'dark' for your desired color scheme. It has the same effect as setting the background.
+"let g:lucius_contrast='normal'  " (default: 'normal')
+"" This option determines the contrast to use for text/ui elements. It can be set to 'low', 'normal', or 'high'. At this time there is no 'high' for the light scheme.
+"let g:lucius_contrast_bg='normal' " (default: 'normal')
+""Setting this option makes the background a higher contrast. Current settings are 'normal' and 'high'.
+"let g:lucius_use_bold=1 " (default: 1)
+"" Setting this will cause the color scheme to use bold fonts for some items.
+"let g:lucius_use_underline=1 " (default: 1)
 "colorscheme lucius
 "let g:airline_theme='lucius'
 
@@ -178,7 +178,7 @@ let g:airline_theme='solarized'
 ""let g:lightline = {'colorscheme' : 'gruvbox_material'}
 
 " Shift modifier doesn't work with vim in conjunction with ctrl modifier
-call togglebg#map("<c-s-s>")
+"call togglebg#map("<c-s-s>")
 
 " Enable Lightline or Airline. See vim-airline FAQ or Lightline Readme.
 set laststatus=2
@@ -198,7 +198,7 @@ function! ToggleSchemeColor()
       "let g:ayucolor="light"
   "endif
   "colorscheme ayu
-  
+
   " Swap background
   let &background = ( &background == "dark"? "light" : "dark" )
   if exists("g:colors_name")
@@ -211,7 +211,7 @@ function! ToggleSchemeColor()
   "execute 'source' globpath(&rtp, 'autoload/lightline/colorscheme/solarized.vim')
   "call lightline#colorscheme()
   "call lightline#update()
-  
+
   " Swap Airline too
   if exists("g:airline_theme")
       exe "AirlineTheme " . g:airline_theme
