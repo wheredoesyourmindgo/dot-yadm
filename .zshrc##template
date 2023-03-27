@@ -133,6 +133,15 @@ function vim {
     env vim --cmd "let theme = 'light'" $@
   fi
 }
+function nvim {
+  DARK_MODE=$(dark-mode status)
+
+  if [[ "$DARK_MODE" == "on" ]]; then
+    env nvim --cmd "let theme = 'dark'" $@
+  else
+    env nvim --cmd "let theme = 'light'" $@
+  fi
+}
 {% endif %}
 
 # Banner
