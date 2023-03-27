@@ -41,6 +41,32 @@ elif [ "$system_type" = "FreeBSD" ]; then
   rm ~/Downloads/yadm-extra-fonts.zip
 fi
 
+
+# Make all executable files (excluding templates and editor backups) in the
+# ~/.config/yadm/bootstrap.d directory when run.
+# See https://raw.githubusercontent.com/TheLocehiliosan/yadm/master/contrib/bootstrap/bootstrap-in-dir for more info.
+
+set -eu
+
+# Directory to look for bootstrap executables in
+BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
+
+if [[ ! -d "$BOOTSTRAP_D" ]]; then
+    echo "Error: bootstrap directory '$BOOTSTRAP_D' not found" >&2
+    exit 1
+fi
+
+find -L "$BOOTSTRAP_D" -type f | sort | while IFS= read -r bootstrap; do
+    if [[ -x "$bootstrap" && ! "$bootstrap" =~ "##" && ! "$bootstrap" =~ "~$" ]]; then
+        if ! "$bootstrap"; then
+            echo "Error: bootstrap '$bootstrap' failed" >&2
+            exit 1
+        fi
+    fi
+done
+
+# Config Apps AFTER they are installed above using homebrew
+
 # install Vim plugin manager (vim-plug)
 if [ ! -f "$HOME/.vim/autoload/plug.vim" ]; then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -74,30 +100,10 @@ if [ ! -d "$HOME/.zplug" ]; then
   mkdir -p $ZPLUG_HOME
   git clone -q https://github.com/zplug/zplug $ZPLUG_HOME
   #source $ZPLUG_HOME/init.zsh
+  source $HOME/.zshenv
   source $HOME/.zshrc
   zplug install
 fi
+echo "Updating Zplug Plugins"
+zplug update
 
-
-# Make all executable files (excluding templates and editor backups) in the
-# ~/.config/yadm/bootstrap.d directory when run.
-# See https://raw.githubusercontent.com/TheLocehiliosan/yadm/master/contrib/bootstrap/bootstrap-in-dir for more info.
-
-set -eu
-
-# Directory to look for bootstrap executables in
-BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
-
-if [[ ! -d "$BOOTSTRAP_D" ]]; then
-    echo "Error: bootstrap directory '$BOOTSTRAP_D' not found" >&2
-    exit 1
-fi
-
-find -L "$BOOTSTRAP_D" -type f | sort | while IFS= read -r bootstrap; do
-    if [[ -x "$bootstrap" && ! "$bootstrap" =~ "##" && ! "$bootstrap" =~ "~$" ]]; then
-        if ! "$bootstrap"; then
-            echo "Error: bootstrap '$bootstrap' failed" >&2
-            exit 1
-        fi
-    fi
-done
