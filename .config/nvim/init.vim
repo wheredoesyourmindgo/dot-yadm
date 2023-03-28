@@ -7,6 +7,11 @@ call plug#begin()
 if exists('g:vscode')
   " VSCode extension
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
+  Plug 'chrisbra/matchit'
+  Plug 'bkad/CamelCaseMotion'
+  Plug 'kana/vim-textobj-entire'
+  Plug 'kana/vim-textobj-indent'
+  Plug 'kana/vim-textobj-user'
 else
   " ordinary Neovim
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
@@ -14,40 +19,31 @@ else
   Plug 'chrisbra/matchit'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   "Plug 'rhysd/clever-f.vim'
-  Plug 'jonathanfilip/vim-lucius'
-  Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-indent'
+  Plug 'kana/vim-textobj-user'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-fugitive'
   "Plug 'tpope/vim-surround'
   Plug 'machakann/vim-sandwich'
   Plug 'sheerun/vim-polyglot' " See http://www.drchip.org/astronaut/vim/#HILINKS for more info.
   Plug 'gerw/vim-HiLinkTrace'
-
   Plug 'dense-analysis/ale'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'gcmt/wildfire.vim'
   Plug 'preservim/nerdcommenter'
   Plug 'f-person/auto-dark-mode.nvim'
-
   " Lightline
   "Plug 'itchyny/lightline.vim'
-
   " Indent Guides
   "Plug 'nathanaelkane/vim-indent-guides'
-
   " Indent Lines
   Plug 'Yggdroot/indentLine'
-
-  "Solarized
   " Plug 'altercation/vim-colors-solarized'
   "Plug 'lifepillar/vim-solarized8'
   "Plug 'shaunsingh/solarized.nvim'
   Plug 'overcache/NeoSolarized'
-
   "Plug 'Valloric/MatchTagAlways'
-
   "Plug 'leafgarland/typescript-vim' " Covered by vim-polyglot.
   "Plug 'peitalin/vim-jsx-typescript'
   "Plug 'HerringtonDarkholme/yats.vim' " Included in Vim 8.2+.
