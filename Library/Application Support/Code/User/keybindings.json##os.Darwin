@@ -85,7 +85,13 @@
     "key": "Enter",
     "command": "workbench.action.showCommands",
     // "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && !renameInputVisible && !textInputFocus"
-    "when": "!inputFocus && !focusedView"
+    //"when": "vim.mode && !inputFocus && !focusedView"
+    "when": "vim.mode && editorTextFocus && vim.mode != insert || vim.mode && !editorIsOpen && !terminalFocus && !sideBarFocus"
+  },
+  {
+    "key": "Enter",
+    "command": "workbench.action.showCommands",
+    "when": "neovim.mode && editorTextFocus && neovim.mode != insert || neovim.mode && !editorIsOpen && !terminalFocus && !sideBarFocus"
   },
   {
     "key": "ctrl+`",

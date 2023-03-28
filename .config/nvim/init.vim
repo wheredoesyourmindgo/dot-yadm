@@ -6,6 +6,7 @@ call plug#begin()
 
 if exists('g:vscode')
   " VSCode extension
+  Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
 else
   " ordinary Neovim
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
@@ -81,22 +82,6 @@ let &t_ZR="\e[23m"
 " map semi-colon to escape
 "imap `` <esc>
 
-"" Solarized port for NeoVim - https://github.com/shaunsingh/solarized.nvim
-"let g:solarized_italic_comments=v:true
-"let g:solarized_italic_keywords=v:true
-""let g:solarized_italic_functions = v:true
-""let g:solarized_italic_variables = v:false
-""let g:solarized_contrast = v:true
-""let g:solarized_borders = v:false
-""let g:solarized_disable_background = v:false
-"colorscheme solarized
-"let g:airline_theme='solarized'
-
-" Neo Solarized - https://github.com/overcache/NeoSolarized
-let g:neosolarized_italic = 1
-colorscheme NeoSolarized
-let g:airline_theme='solarized'
-
 " Enable Lightline or Airline. See vim-airline FAQ or Lightline Readme.
 set laststatus=2
 
@@ -166,6 +151,10 @@ set foldmethod=syntax
 
 if exists('g:vscode')
   " VSCode extension
+  " TESTING Grow & Shrink
+  nnoremap b <Cmd>call VSCodeNotify('editor.action.grow')<CR>
+  vnoremap b <Cmd>call VSCodeNotifyVisual('editor.action.grow', 1)<CR>
+  vnoremap B <Cmd>call VSCodeNotifyVisual('editor.action.shrink', 1)<CR>
 else
   " ordinary Neovim
 
@@ -178,4 +167,20 @@ else
   else
     set background=dark
   endif
+
+  "" Solarized port for NeoVim - https://github.com/shaunsingh/solarized.nvim
+  "let g:solarized_italic_comments=v:true
+  "let g:solarized_italic_keywords=v:true
+  ""let g:solarized_italic_functions = v:true
+  ""let g:solarized_italic_variables = v:false
+  ""let g:solarized_contrast = v:true
+  ""let g:solarized_borders = v:false
+  ""let g:solarized_disable_background = v:false
+  "colorscheme solarized
+  "let g:airline_theme='solarized'
+
+  " Neo Solarized - https://github.com/overcache/NeoSolarized
+  let g:neosolarized_italic = 1
+  colorscheme NeoSolarized
+  let g:airline_theme='solarized'
 endif
