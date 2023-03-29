@@ -7,25 +7,31 @@ call plug#begin()
 if exists('g:vscode')
   " VSCode extension
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
+  Plug 'wheredoesyourmindgo/serenity-vim-repeat'
   Plug 'chrisbra/matchit'
   Plug 'bkad/CamelCaseMotion'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-indent'
+  Plug 'kana/vim-textobj-line'
   Plug 'kana/vim-textobj-user'
+  Plug 'tpope/vim-surround'
 else
   " ordinary Neovim
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
+  "Plug 'tpope/vim-repeat'
+  Plug 'wheredoesyourmindgo/serenity-vim-repeat'
   Plug 'bkad/CamelCaseMotion'
   Plug 'chrisbra/matchit'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   "Plug 'rhysd/clever-f.vim'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-indent'
+  Plug 'kana/vim-textobj-line'
   Plug 'kana/vim-textobj-user'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-fugitive'
-  "Plug 'tpope/vim-surround'
-  Plug 'machakann/vim-sandwich'
+  Plug 'tpope/vim-surround'
+  "Plug 'machakann/vim-sandwich'
   Plug 'sheerun/vim-polyglot' " See http://www.drchip.org/astronaut/vim/#HILINKS for more info.
   Plug 'gerw/vim-HiLinkTrace'
   Plug 'dense-analysis/ale'
@@ -148,8 +154,8 @@ set foldmethod=syntax
 if exists('g:vscode')
   " VSCode extension
   " TESTING Grow & Shrink
-  nnoremap b <Cmd>call VSCodeNotify('editor.action.grow')<CR>
-  vnoremap b <Cmd>call VSCodeNotifyVisual('editor.action.grow', 1)<CR>
+  nnoremap b <Cmd>call VSCodeNotify('editor.action.smartSelect.grow')<CR>
+  vnoremap b <Cmd>call VSCodeNotifyVisual('editor.action.smartSelect.grow', 1)<CR>
   vnoremap B <Cmd>call VSCodeNotifyVisual('editor.action.shrink', 1)<CR>
 else
   " ordinary Neovim
