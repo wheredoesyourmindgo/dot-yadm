@@ -4,6 +4,24 @@ let g:byoa_keymap='serenity'
 
 call plug#begin()
 
+
+" unbind vscode-neovim extension stuff before loading serenity-vim
+if exists('g:vscode')
+  unmap z<CR>
+  unmap zt
+  unmap z.
+  unmap zz
+  unmap z-
+  unmap zb
+  unmap H
+  unmap M
+  unmap L
+  unmap ==
+  unmap =
+  unmap A
+  unmap N
+endif
+
 if exists('g:vscode')
   " VSCode extension
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
@@ -15,6 +33,7 @@ if exists('g:vscode')
   Plug 'kana/vim-textobj-line'
   Plug 'kana/vim-textobj-user'
   Plug 'tpope/vim-surround'
+  Plug 'rhysd/clever-f.vim'
 else
   " ordinary Neovim
   Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
@@ -23,7 +42,7 @@ else
   Plug 'bkad/CamelCaseMotion'
   Plug 'chrisbra/matchit'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-  "Plug 'rhysd/clever-f.vim'
+  Plug 'rhysd/clever-f.vim'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-indent'
   Plug 'kana/vim-textobj-line'
@@ -39,6 +58,8 @@ else
   Plug 'gcmt/wildfire.vim'
   Plug 'preservim/nerdcommenter'
   Plug 'f-person/auto-dark-mode.nvim'
+  Plug 'inkarkat/vim-ingo-library'
+  Plug 'inkarkat/vim-EnhancedJumps'
   " Lightline
   "Plug 'itchyny/lightline.vim'
   " Indent Guides
@@ -149,6 +170,13 @@ noremap <silent> <leader><esc> :noh<cr>
 " setup folding
 set nofoldenable
 set foldmethod=syntax
+
+" Clever-f
+let g:clever_f_smart_case=1
+let g:clever_f_fix_key_direction=1
+
+" Enhanced Jumps
+let g:EnhancedJumps_no_mappings=1
 
 
 if exists('g:vscode')

@@ -24,7 +24,7 @@ Plug 'wheredoesyourmindgo/serenity-vim', { 'branch': 'main' }
 Plug 'bkad/CamelCaseMotion'
 Plug 'chrisbra/matchit'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-"Plug 'rhysd/clever-f.vim'
+Plug 'rhysd/clever-f.vim'
 "Plug 'relastle/bluewery.vim'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'kana/vim-textobj-entire'
@@ -44,6 +44,8 @@ Plug 'dense-analysis/ale'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'gcmt/wildfire.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'inkarkat/vim-ingo-library'
+Plug 'inkarkat/vim-EnhancedJumps'
 
 " Lightline
 "Plug 'itchyny/lightline.vim'
@@ -278,3 +280,10 @@ noremap <silent> <leader><esc> :noh<cr>
 " setup folding
 set nofoldenable
 set foldmethod=syntax
+
+" Clever-f
+let g:clever_f_smart_case=1
+let g:clever_f_fix_key_direction=1
+
+" Enhanced Jumps
+let g:EnhancedJumps_no_mappings=1
