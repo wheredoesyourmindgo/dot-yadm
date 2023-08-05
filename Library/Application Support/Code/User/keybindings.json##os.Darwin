@@ -77,22 +77,6 @@
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
-  /*
-  !inputFocus - prevents 'show all commands' from popping up after hitting enter in the search/replace dialog input, and the marketplace search input (and likely other inputs).
-  !focusedView - prevents 'show all commands' from popping up after a file/folder is renamed in explorer view
-  */
-  {
-    "key": "Enter",
-    "command": "workbench.action.showCommands",
-    // "when": "!filesExplorerFocus && !terminalFocus && vim.mode != 'Insert' && !inputFocus && !renameInputVisible && !textInputFocus"
-    //"when": "vim.mode && !inputFocus && !focusedView"
-    "when": "vim.mode && editorTextFocus && vim.mode != insert || vim.mode && !editorIsOpen && !terminalFocus && !sideBarFocus"
-  },
-  {
-    "key": "Enter",
-    "command": "workbench.action.showCommands",
-    "when": "neovim.mode && editorTextFocus && neovim.mode != insert || neovim.mode && !editorIsOpen && !terminalFocus && !sideBarFocus"
-  },
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
@@ -100,42 +84,6 @@
   {
     "key": "alt+c",
     "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
-    "key": "cmd+shift+g",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "cmd+shift+g",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "cmd+shift+g",
-    "command": "-workbench.action.terminal.findPrevious",
-    "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "cmd+shift+g",
-    "command": "-editor.action.previousMatchFindAction",
-    "when": "editorFocus"
-  },
-  // Toggle Search
-  {
-    "key": "cmd+shift+f",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorFocus"
   },
   // Similar to system command
   {
@@ -163,12 +111,6 @@
     "key": "alt+cmd+w",
     "command": "-toggleSearchWholeWord",
     "when": "searchViewletFocus"
-  },
-  // Using ctrl-k to delete right. Not sure what this command even does.
-  {
-    "key": "ctrl+k",
-    "command": "-extension.vim_ctrl+k",
-    "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
   },
   // Disable confusing quick open in group and use standard tab switching
   {
@@ -206,101 +148,8 @@
     "key": "alt+t",
     "command": "workbench.action.showAllSymbols"
   },
-  // {
-  //   "key": "pagedown",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["<C-f>"]
-  //   }
-  // },
-  // {
-  //   "key": "shift+pagedown",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["<C-d>"]
-  //   }
-  // },
-  // {
-  //   "key": "pageup",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["<C-b>"]
-  //   }
-  // },
-  // {
-  //   "key": "shift+pageup",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["<C-u>"]
-  //   }
-  // },
-  // {
-  //   "key": "shift+home",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["0"]
-  //   }
-  // },
   {
     "key": "cmd+t",
     "command": "workbench.action.files.newUntitledFile"
-  },
-  {
-    "key": "cmd+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+.",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+h",
-    "command": "editor.action.addSelectionToPreviousFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "shift+cmd+\\",
-    "command": "-editor.action.jumpToBracket",
-    "when": "editorTextFocus"
   }
-  // {
-  //   "key": "home",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["t"]
-  //   }
-  // },
-  // {
-  //   "key": "end",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["a"]
-  //   }
-  // }
-  // ex. vim mappings. note - map re-mapped commads, not original commands (yank --> 'm', change --> 'd', so forth).
-  // {
-  //   "key": "alt+...",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal'",
-  //   "args": {
-  //     "after": ["m", "m"]
-  //   }
-  // },
-  // {
-  //   "key": "alt+...",
-  //   "command": "vim.remap",
-  //   "when": "inputFocus && vim.mode == 'Normal' || inputFocus && vim.mode == 'Visual')",
-  //   "args": {
-  //     "after": ["d", "d"]
-  //   }
-  // }
 ]
