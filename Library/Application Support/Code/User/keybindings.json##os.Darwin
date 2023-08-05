@@ -49,35 +49,6 @@
     "command": "workbench.action.focusThirdEditorGroup"
   },
   {
-    "key": "ctrl+cmd+p",
-    "command": "projectManager.listProjects"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "cmd+b",
-    "command": "workbench.action.splitEditor"
-  },
-  {
-    "key": "ctrl+shift+s",
-    "command": "settings.cycle.switchTheme"
-  },
-  {
-    "key": "ctrl+shift+g",
-    "command": "settings.cycle.switchUI"
-  },
-  {
-    "key": "alt+h",
-    "command": "-git.viewFileHistory"
-  },
-  {
-    "key": "cmd+/",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
   },
