@@ -48,14 +48,6 @@
     "key": "ctrl+3",
     "command": "workbench.action.focusThirdEditorGroup"
   },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "alt+c",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
   // Similar to system command
   {
     "key": "cmd+0",
