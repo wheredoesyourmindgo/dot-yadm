@@ -1,3 +1,7 @@
+# Disable the battery module, hiding it from the prompt completely
+[battery]
+disabled = true
+
 # defaults to 500
 command_timeout = 2000
 
