@@ -114,5 +114,21 @@
   {
     "key": "cmd+t",
     "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+g",
+    "command": "-relative-goto.goto"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-relative-goto.select"
+  },
+  {
+    "key": "ctrl+alt+g",
+    "command": "relative-goto.goto"
+  },
+  {
+    "key": "ctrl+alt+shift+g",
+    "command": "relative-goto.select"
   }
 ]
