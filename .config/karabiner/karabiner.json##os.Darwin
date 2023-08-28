@@ -1055,7 +1055,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "i"
+                  "key_code": "a"
                 },
                 "type": "basic"
               },
@@ -1611,7 +1611,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "u"
+                  "key_code": "o"
                 },
                 "type": "basic"
               },
@@ -1716,7 +1716,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "a"
+                  "key_code": "i"
                 },
                 "type": "basic"
               },
@@ -1856,7 +1856,7 @@
                   }
                 },
                 "to": {
-                  "key_code": "o"
+                  "key_code": "u"
                 },
                 "type": "basic"
               },
