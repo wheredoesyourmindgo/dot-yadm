@@ -6,11 +6,13 @@ import iterm2
 async def changeTheme(theme_parts, connection):
     # Themes have space-delimited attributes, one of which will be light or dark.
     if "dark" in theme_parts:
-        preset = await iterm2.ColorPreset.async_get(connection, "catppuccin-mocha")
+        preset = await iterm2.ColorPreset.async_get(connection, "GitHub Dark Default")
+        # preset = await iterm2.ColorPreset.async_get(connection, "catppuccin-mocha")
         # preset = await iterm2.ColorPreset.async_get(connection, "Solarized Dark+")
         # preset = await iterm2.ColorPreset.async_get(connection, "LuciusDark")
     else:
-        preset = await iterm2.ColorPreset.async_get(connection, "catppuccin-latte")
+        preset = await iterm2.ColorPreset.async_get(connection, "GitHub Light Default")
+        # preset = await iterm2.ColorPreset.async_get(connection, "catppuccin-latte")
         # preset = await iterm2.ColorPreset.async_get(connection, "Solarized Light+")
         # preset = await iterm2.ColorPreset.async_get(connection, "LuciusLight")
 
