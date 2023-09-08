@@ -130,5 +130,9 @@
   {
     "key": "ctrl+alt+shift+g",
     "command": "relative-goto.select"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "settings.cycle.switchUI"
   }
 ]
