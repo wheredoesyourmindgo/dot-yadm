@@ -55,9 +55,8 @@ Plug 'Yggdroot/indentLine'
 "Plug 'wheredoesyourmindgo/gruvbox-material-fork' " Forked from 'sainnhe/gruvbox-material'
 
 "Solarized
-Plug 'altercation/vim-colors-solarized'
-
-Plug 'lifepillar/vim-solarized8'
+""Plug 'altercation/vim-colors-solarized'
+"Plug 'lifepillar/vim-solarized8'
 
 "Plug 'Valloric/MatchTagAlways'
 
@@ -66,8 +65,8 @@ Plug 'lifepillar/vim-solarized8'
 "Plug 'HerringtonDarkholme/yats.vim' " Included in Vim 8.2+.
 
 " Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 
 " Initialize plugin system
@@ -80,12 +79,12 @@ set backspace=indent,eol,start
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
 
-if (has("termguicolors"))
-  set termguicolors
-endif
+" if (has("termguicolors"))
+  " set termguicolors
+" endif
 
-let g:airline_powerline_fonts = 1 " with ligatures
-"let g:airline_powerline_fonts = 0 " without ligatures
+" let g:airline_powerline_fonts = 1 " with ligatures
+""let g:airline_powerline_fonts = 0 " without ligatures
 
 " Allows for italics in vim. (https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic)
 let &t_ZH="\e[3m"
@@ -95,113 +94,41 @@ let &t_ZR="\e[23m"
 " map semi-colon to escape
 "imap `` <esc>
 
-"" Gruvbox
-"if (has("termguicolors"))
-  "set termguicolors
-"endif
-"let g:gruvbox_contrast_dark="medium" " one of: soft, medium, hard
-"let g:gruvbox_contrast_light="medium" " one of: soft, medium, hard
-"set background=dark
-"let g:gruvbox_bold=1
-"let g:gruvbox_italic=1
-""let g:gruvbox_invert_indent_guides=1
-"let g:airline_theme='gruvbox'
-""let g:lightline = {
-  ""\ 'colorscheme': 'gruvbox',
-  ""\ }
-""colorscheme gruvbox-fork
-"colorscheme gruvbox
-
-
-"" Solarized
-""set background=light
-"set background=dark
-"let g:solarized_termtrans=1 " needs to be before colorscheme to remove gray background
-"let g:solarized_bold=1 " needs to be before colorscheme to remove gray background
-"let g:solarized_italic=1 " needs to be before colorscheme to remove gray background
-"let g:solarized_underline=1 " needs to be before colorscheme to remove gray background
-"colorscheme solarized
-"let g:airline_theme='solarized'
-""let g:lightline = {
-  ""\ 'colorscheme': 'solarized'
-  ""\ }
-
 " Solarized8
-let g:solarized_termtrans=1
-let g:solarized_use16=1
-let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
-"set background=light
-"set background=dark
-colorscheme solarized8
-let g:airline_theme='solarized'
+"let g:solarized_termtrans=1
+"let g:solarized_use16=1
+"let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
+""set background=light
+""set background=dark
+"colorscheme solarized8
+"let g:airline_theme='solarized'
 ""let g:lightline = {
  ""\ 'colorscheme': 'solarized'
  ""\ }
 
-" Lucius
-""let g:lucius_style='dark'  " (default: 'dark')
-"" Set this option to either 'light' or 'dark' for your desired color scheme. It has the same effect as setting the background.
-"let g:lucius_contrast='normal'  " (default: 'normal')
-"" This option determines the contrast to use for text/ui elements. It can be set to 'low', 'normal', or 'high'. At this time there is no 'high' for the light scheme.
-"let g:lucius_contrast_bg='normal' " (default: 'normal')
-""Setting this option makes the background a higher contrast. Current settings are 'normal' and 'high'.
-"let g:lucius_use_bold=1 " (default: 1)
-"" Setting this will cause the color scheme to use bold fonts for some items.
-"let g:lucius_use_underline=1 " (default: 1)
-"colorscheme lucius
-"let g:airline_theme='lucius'
-
-"colorscheme bluewery
-"set termguicolors
-"let g:lightline = { 'colorscheme': 'bluewery' }
-
-"" Gruvbox Material Fork
-"" Enable true color 启用终端24位色
-"if (has("termguicolors"))
-"  set termguicolors
-"endif
-"" for dark version
-"set background=dark
-""" for light version
-"""set background=light
-"" set contrast
-"" this configuration option should be placed before `colorscheme gruvbox-material`
-"" available values: 'hard', 'medium'(default), 'soft'
-"let g:gruvbox_material_background = 'medium'
-"let g:gruvbox_material_enable_bold = 1
-"let g:gruvbox_material_enable_italic = 1
-"let g:gruvbox_material_palette = 'mix'
-"colorscheme gruvbox-material-fork
-"let g:airline_theme = 'gruvbox_material'
-""let g:lightline = {'colorscheme' : 'gruvbox_material'}
 
 " Shift modifier doesn't work with vim in conjunction with ctrl modifier
 "call togglebg#map("<c-s-s>")
 
 " Enable Lightline or Airline. See vim-airline FAQ or Lightline Readme.
-set laststatus=2
+" set laststatus=2
 
 " By the way, -- INSERT -- is unnecessary anymore because the mode information is displayed in the statusline.
-set noshowmode
+" set noshowmode
 
 " Transparent Background
-"hi Normal guibg=NONE ctermbg=NONE
-"hi! NonText ctermbg=NONE guibg=NONE
+hi Normal guibg=NONE ctermbg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
 
+" Hide Statusline
+set laststatus=0
 
 function! ToggleSchemeColor()
-  "if g:ayucolor == "light"
-      "let g:ayucolor="dark"
-  "else
-      "let g:ayucolor="light"
-  "endif
-  "colorscheme ayu
-
   " Swap background
-  let &background = ( &background == "dark"? "light" : "dark" )
-  if exists("g:colors_name")
-      exe "colorscheme " . g:colors_name
-  endif
+  " let &background = ( &background == "dark"? "light" : "dark" )
+  " if exists("g:colors_name")
+  "     exe "colorscheme " . g:colors_name
+  " endif
 
   " Swap Lightline too
   "call lightline#init()
@@ -211,9 +138,9 @@ function! ToggleSchemeColor()
   "call lightline#update()
 
   " Swap Airline too
-  if exists("g:airline_theme")
-      exe "AirlineTheme " . g:airline_theme
-  endif
+  " if exists("g:airline_theme")
+      " exe "AirlineTheme " . g:airline_theme
+  " endif
 endfunction
 
 "nnoremap <silent><c-o> :call ToggleSchemeColor()<CR>
