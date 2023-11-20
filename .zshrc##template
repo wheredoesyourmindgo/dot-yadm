@@ -78,9 +78,22 @@ gitall() {
 }
 
 # pyenv
+{% if yadm.os == "Darwin" %} # pyenv installed via homebrew
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
+{% endif %}
+{% if yadm.distro == "Ubuntu" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+{% endif %}
+{% if yadm.os == "FreeBSD" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+{% endif %}
+
 # If using pyenv on linux there is some code to add here regarding paths. see https://github.com/pyenv/pyenv#basic-github-checkout for more info.
 
 ## rehash slow at load. rehash in the background.
@@ -155,12 +168,12 @@ export NVM_DIR="$HOME/.nvm"
 {% if yadm.os == "Darwin" %}
 # m1 macs
 # use homebrew version of nvm w/ macos
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # intel macs
 # use homebrew version of nvm w/ macos
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 {% endif %}
 {% if yadm.os == "FreeBSD" %}
 # nvm installed from source
