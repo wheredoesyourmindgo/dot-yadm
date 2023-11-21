@@ -78,21 +78,24 @@ gitall() {
 }
 
 # pyenv
-{% if yadm.os == "Darwin" %} # pyenv installed via homebrew
+{% if yadm.os == "Darwin" %}
+# pyenv installed via homebrew
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
 {% endif %}
-# {% if yadm.distro == "Ubuntu" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# {% endif %}
-# {% if yadm.os == "FreeBSD" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# {% endif %}
+{% if yadm.distro == "Ubuntu" %}
+# pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+{% endif %}
+{% if yadm.os == "FreeBSD" %}
+# pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+{% endif %}
 
 # If using pyenv on linux there is some code to add here regarding paths. see https://github.com/pyenv/pyenv#basic-github-checkout for more info.
 
@@ -237,12 +240,6 @@ fi
 {% if yadm.os == "FreeBSD" %}
 if command -v keychain 1>/dev/null 2>&1; then
   eval $(keychain --eval --quiet id_rsa)
-fi
-{% endif %}
-
-{% if yadm.os == "Darwin" %} # pyenv installed via homebrew
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
 fi
 {% endif %}
 

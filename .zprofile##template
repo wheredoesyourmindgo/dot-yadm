@@ -1,34 +1,37 @@
 # don't recall why this was ever added, commenting out till I have an explicit reason for putting it back in
 # add unique paths from PATH to PATH_SAVE and replace PATH with PATH_SAVE
-if [ -n "$PATH_SAVE" ]; then
-  PATH_SAVE=:$PATH_SAVE:;
-  PATH=$PATH:
-  while [ -n "$PATH" ]; do
-   x=${PATH%%:*}  # the first remaining entry
-   case $PATH_SAVE in
-     *:$x:*) ;;  # already there
-     *) PATH_SAVE=$PATH_SAVE$x: ;;  # not there yet
-   esac
-   PATH=${PATH#*:}
-  done
-  PATH=${PATH_SAVE:1:-1}
-  unset PATH_SAVE x
-  export PATH
-fi
+# if [ -n "$PATH_SAVE" ]; then
+#   PATH_SAVE=:$PATH_SAVE:;
+#   PATH=$PATH:
+#   while [ -n "$PATH" ]; do
+#    x=${PATH%%:*}  # the first remaining entry
+#    case $PATH_SAVE in
+#      *:$x:*) ;;  # already there
+#      *) PATH_SAVE=$PATH_SAVE$x: ;;  # not there yet
+#    esac
+#    PATH=${PATH#*:}
+#   done
+#   PATH=${PATH_SAVE:1:-1}
+#   unset PATH_SAVE x
+#   export PATH
+# fi
 
 
 # pyenv
-{% if yadm.os == "Darwin" %} # pyenv installed via homebrew
+{% if yadm.os == "Darwin" %}
+# pyenv installed via homebrew
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
 {% endif %}
-{% if yadm.distro == "Ubuntu" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+{% if yadm.distro == "Ubuntu" %}
+# pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 {% endif %}
-{% if yadm.os == "FreeBSD" %} # pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
+{% if yadm.os == "FreeBSD" %}
+# pyenv installed with auto installer, see https://github.com/pyenv/pyenv#automatic-installer
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
