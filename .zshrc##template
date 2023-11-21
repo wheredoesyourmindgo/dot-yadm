@@ -240,5 +240,11 @@ if command -v keychain 1>/dev/null 2>&1; then
 fi
 {% endif %}
 
+{% if yadm.os == "Darwin" %} # pyenv installed via homebrew
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
+{% endif %}
+
 # set Starship as a prompt
 eval "$(starship init zsh)"
