@@ -35,24 +35,14 @@ else
   Plug 'f-person/auto-dark-mode.nvim'
   Plug 'inkarkat/vim-ingo-library'
   Plug 'inkarkat/vim-EnhancedJumps'
-  " Lightline
-  "Plug 'itchyny/lightline.vim'
   " Indent Guides
   "Plug 'nathanaelkane/vim-indent-guides'
   " Indent Lines
   Plug 'Yggdroot/indentLine'
-  " Plug 'altercation/vim-colors-solarized'
-  "Plug 'lifepillar/vim-solarized8'
-  "Plug 'shaunsingh/solarized.nvim'
-  Plug 'overcache/NeoSolarized'
   "Plug 'Valloric/MatchTagAlways'
   "Plug 'leafgarland/typescript-vim' " Covered by vim-polyglot.
   "Plug 'peitalin/vim-jsx-typescript'
   "Plug 'HerringtonDarkholme/yats.vim' " Included in Vim 8.2+.
-
-  " Airline
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
 endif
 
 " Initialize plugin system
@@ -65,12 +55,9 @@ set backspace=indent,eol,start
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
 
-if (has("termguicolors"))
-  set termguicolors
-endif
-
-let g:airline_powerline_fonts = 1 " with ligatures
-"let g:airline_powerline_fonts = 0 " without ligatures
+" if (has("termguicolors"))
+"   set termguicolors
+" endif
 
 " Allows for italics in vim. (https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic)
 let &t_ZH="\e[3m"
@@ -84,11 +71,14 @@ let &t_ZR="\e[23m"
 set laststatus=2
 
 " By the way, -- INSERT -- is unnecessary anymore because the mode information is displayed in the statusline.
-set noshowmode
+" set noshowmode
 
 " Transparent Background
-"hi Normal guibg=NONE ctermbg=NONE
-"hi! NonText ctermbg=NONE guibg=NONE
+hi Normal guibg=NONE ctermbg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+
+" Hide Statusline
+set laststatus=0
 
 " Show Highlight Scope w/ F10
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -116,9 +106,6 @@ noremap <silent> <leader><esc> :noh<cr>
 " vmap ® <Plug>(wildfire-water)
 " vmap <leader>r <Plug>(wildfire-water)
 "nmap <leader><Enter> <Plug>(wildfire-quick-select)
-
-
-"let g:clever_f_smart_case=1
 
 " hybrid line numbers
 " turn hybrid line numbers on
@@ -169,19 +156,4 @@ else
     set background=dark
   endif
 
-  "" Solarized port for NeoVim - https://github.com/shaunsingh/solarized.nvim
-  "let g:solarized_italic_comments=v:true
-  "let g:solarized_italic_keywords=v:true
-  ""let g:solarized_italic_functions = v:true
-  ""let g:solarized_italic_variables = v:false
-  ""let g:solarized_contrast = v:true
-  ""let g:solarized_borders = v:false
-  ""let g:solarized_disable_background = v:false
-  "colorscheme solarized
-  "let g:airline_theme='solarized'
-
-  " Neo Solarized - https://github.com/overcache/NeoSolarized
-  let g:neosolarized_italic = 1
-  colorscheme NeoSolarized
-  let g:airline_theme='solarized'
 endif

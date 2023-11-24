@@ -172,9 +172,6 @@ noremap <silent> <leader><esc> :noh<cr>
 " vmap <leader>r <Plug>(wildfire-water)
 "nmap <leader><Enter> <Plug>(wildfire-quick-select)
 
-
-"let g:clever_f_smart_case=1
-
 " hybrid line numbers
 " turn hybrid line numbers on
 :set number relativenumber
